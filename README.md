@@ -6,7 +6,7 @@ This project is a private hobby project and is not affiliated with, endorsed, or
 All observations are based on user-visible network behaviour.
 
 "Miele" is a registered trademark of Miele & Cie. KG and Miele Beteiligungs GmbH.
-This project uses the official Miele 3rd Party API to access Miele Cloud. It is required to register for a Miele developer account (https://developer.miele.com/).
+This project uses the official Miele 3rd Party API to access Miele Cloud. You must register for a Miele developer account (https://developer.miele.com/).
 
 **This project is experimental and provided “as is”, without any warranty or guarantee.
 Use at your own risk.**
@@ -46,8 +46,8 @@ The motivation for this project originates from the purchase of two Miele applia
 - **Miele TWD640 WP** (heat pump dryer)(https://www.miele.de/product/12703870/t1-warmepumpentrockner-twd640wp-ecospeedund9kg)
 
 Both appliances support Miele’s smart connectivity features, including 
-cloud-based status reporting and coordinated programs (e.g. Wash2Dry). 
-The complete and direct appliance control by MobileStart feels like technical play and is of lesser importance.
+cloud-based status reporting and coordinated programs (e.g. Wash2Dry).
+Direct appliance control via MobileStart feels more like a technical extra and is of lesser importance for me.
 
 Due to the physical location of the appliances in a cellar environment with
 limited power availability and severe wireless signal attenuation, the
@@ -72,25 +72,28 @@ The goal is to restore **Smart Home Features**, such as:
 
 … without installing permanent infrastructure or relying on neighbor networks.
 
-My personal interest is to learn from the project in different fields (design, communication, hardware, software, mechanical) 
-and gain deeper insight to my usage behaviour. Water and power prices are constantly demanding and likely continue increasing.  
-
+My personal interest is to learn from the project scope in different fields (design thinking, rapid prototyping, system engineering, 
+communication theory, and in general hardware, software, mechanical) and gain deeper insight to my usage behaviour.
+Water and power prices are consistently high and likely to keep increasing. I want to take a more active approach to budgeting, 
+which makes the EcoFeedback feature my main focus.
 
 ## Problem Summary
 
-- Cellar location blocks Wi-Fi due to **concrete, metal, and geometry**.
-- Power outlet availability is very **limited** and occupied by the appliances. Running always-on solutions is to expensive.
-- Internet access must be provided via **cellular (5G, 4G, 3G)** or other means.
+- Cellar location blocks Wi-Fi due to **concrete, metal, and geometry**. 
+- Other Wi-Fi home networks might interference severly along the way.
+- Power outlet availability is very **limited** and occupied by the appliances. 
+- Running a always-on solution is likely to expensive and contradicts eco-friendly appliance principle.
+- Internet access must be provided via **cellular (5G, 4G, 3G, 2G)** or other means.
 - Connectivity interruptions appear to **break smart features per cycle** since appliances seem to fallback to standalone mode and stop reporting to Miele cloud during this particular cycle. 
-- Data volume, protocol behaviour, and buffering tolerance are **undocumented**. It doesnt appear to be hardened against harsh communication environments.
-- The Miele cloud service provision and certain design decisions are proprietary and inherently unknown.
+- Data volume, protocol behaviour, and buffering tolerance are undocumented. The system does not appear to be hardened for harsh environments or intermittent communication.
+- The Miele cloud service architecture and several design decisions are proprietary, leaving key aspects inherently undisclosed.
 
 
 ## Core Idea
 
 Use a **small, battery-powered gateway** that:
 - Acts as a **Wi-Fi Access Point** for the appliances.
-- Uses **cellular (5G or LTE)** as upstream internet.
+- Uses **cellular (5G or LTE or etc.)** as upstream internet.
 - Provides **stable, always-on connectivity during a wash cycle**.
-- Allows **packet capture and analysis** to understand cloud behaviour and infer valuable informations for later optimizations.
+- Allows **packet capture and analysis** to understand cloud behaviour and infer valuable information for future optimizations.
 
