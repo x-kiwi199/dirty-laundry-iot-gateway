@@ -1,0 +1,26 @@
+dirty-laundry-iot-gateway/
+│
+├── README.md
+├── timeline.md
+├── content.md (this document here)
+│
+├── experiments/
+│   ├── 01_wifi_repeater.md
+│   ├── 01_wifi_repeater/
+│   ├── 02_cellular_hotspot.md
+│   ├── 02_cellular_hotspot/
+│   ├── 03_appliance_packet_sniffing.md
+│   └── 03_appliance_packet_sniffing/
+│
+├── docs/
+│   ├── 00_context.md
+│   ├── 01_requirements.md
+│   ├── 02_risk_assessment.md
+│   ├── 03_architecture.md
+│   ├── 04_design_thinking.md
+│   ├── 05_decisions.md
+│   └── 06_future_ideas.md
+│
+├── setup/
+│   └── 
+│
