@@ -1,6 +1,5 @@
 # dirty-laundry-iot-gateway
 
-
 ## Disclaimer
 This project is a private hobby project and is not affiliated with, endorsed, or supported by Miele & Cie. KG. No proprietary protocols are reverse-engineered intentionally.
 All observations are based on user-visible network behaviour.
@@ -50,7 +49,7 @@ cloud-based status reporting and coordinated programs (e.g. Wash2Dry).
 Direct appliance control via MobileStart feels more like a technical extra and is of lesser importance for me.
 
 Due to the physical location of the appliances in a cellar environment with
-limited power availability and severe wireless signal attenuation, the
+limited power outlet availability and severe wireless signal attenuation, the
 intended smart functionality could not be used with the existing home network.
 
 This project was started to explore **practical and low-impact ways** to regain
@@ -84,7 +83,8 @@ which makes the EcoFeedback feature my main focus.
 - Power outlet availability is very **limited** and occupied by the appliances. 
 - Running a always-on solution is likely to expensive and contradicts eco-friendly appliance principle.
 - Internet access must be provided via **cellular (5G, 4G, 3G, 2G)** or other means.
-- Connectivity interruptions appear to **break smart features per cycle** since appliances seem to fallback to standalone mode and stop reporting to Miele cloud during this particular cycle. 
+- Severe connectivity interruptions appear to **break smart features per cycle** since appliances seem to fallback to standalone mode and stop reporting to Miele cloud during this particular cycle. 
+- Certain level of connectivity interruptions can be tolerated but unclear to which extend. 
 - Data volume, protocol behaviour, and buffering tolerance are undocumented. The system does not appear to be hardened for harsh environments or intermittent communication.
 - The Miele cloud service architecture and several design decisions are proprietary, leaving key aspects inherently undisclosed.
 
@@ -93,7 +93,7 @@ which makes the EcoFeedback feature my main focus.
 
 Use a **small, battery-powered gateway** that:
 - Acts as a **Wi-Fi Access Point** for the appliances.
-- Uses **cellular (5G or LTE or etc.)** as upstream internet.
+- Uses **cellular (5G or LTE or other cellular network)** as upstream internet.
 - Provides **stable, always-on connectivity during a wash cycle**.
 - Allows **packet capture and analysis** to understand cloud behaviour and infer valuable information for future optimizations.
 
