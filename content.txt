@@ -2,7 +2,7 @@ dirty-laundry-iot-gateway/
 │
 ├── README.md
 ├── timeline.md
-├── content.md (this document here)
+├── content.txt (this document here)
 │
 ├── experiments/
 │   ├── 01_wifi_repeater.md
@@ -20,6 +20,9 @@ dirty-laundry-iot-gateway/
 │   ├── 04_design_thinking.md
 │   ├── 05_decisions.md
 │   └── 06_future_ideas.md
+│
+├── screenshots/
+│   └── miele-app/
 │
 ├── setup/
 │   └── 
