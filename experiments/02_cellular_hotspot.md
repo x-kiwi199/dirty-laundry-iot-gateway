@@ -27,6 +27,10 @@ Conduct preliminary testing to support design thinking and hardware selection. I
 - Placement near a cellar window instead on top of washing machine/dryer stack advisable for better cellular connection.
 - !Appliance initial configuration with hotspot not feasible if the device (phone) is tethered and/or hotspot running the Miele app!
 - Tethered connections where difficult to capture the desired appliance traffic.
+- Only during sniffing sessions the connection **(or in particular this setup)** seems to be very brittle
+- Later regular usage with the tablet hotspot/cellar network solution revealed that to a certain extend reconnection attempts occur. 
+Otherwise the mobile app wouldn't switch back and forth between not connected appliance and active wash
+cycle.
 
 ### Analysis
 
