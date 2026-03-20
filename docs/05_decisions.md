@@ -3,15 +3,15 @@
 ## Accepted Decisions
 
 - Use an existing Android tablet as the production connectivity device
-- Avoid per-MB billing SIM cards
+- Avoid expensive per-MB billing SIM cards
 - Prioritize reliability and simplicity over packet-level insight
 - Keep the system always-on or automatically scheduled
 
 ## Rejected Decisions
 
-- Laptop-based gateways
+- Laptop-based gateways for final solution
 - Per-cycle manual activation
-- Complex battery and power control logic
+- Complex battery and power control logic (additional electronic design)
 - Over-optimization at the cost of usability
 
 ## Open Decisions

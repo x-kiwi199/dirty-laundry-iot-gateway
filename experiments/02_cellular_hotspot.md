@@ -25,12 +25,12 @@ Conduct preliminary testing to support design thinking and hardware selection. I
 ### Lesson Learned
 - Cellular connectivity is viable. (Worked as standalone solution hotspot/cellular connection on tablet)
 - Placement near a cellar window instead on top of washing machine/dryer stack advisable for better cellular connection.
-- !Appliance initial configuration with hotspot not feasible if the device (phone) is tethered and/or hotspot running the Miele app!
+- Appliance initial configuration with hotspot not feasible if the device (phone) is tethered and/or hotspot running the Miele app!
 - Tethered connections where difficult to capture the desired appliance traffic.
 - Only during sniffing sessions the connection **(or in particular this setup)** seems to be very brittle
 - Later regular usage with the tablet hotspot/cellar network solution revealed that to a certain extend reconnection attempts occur. 
 Otherwise the mobile app wouldn't switch back and forth between not connected appliance and active wash
-cycle.
+cycle. Since I am using the tablet setup solution for quite some month, I can confirm it works reliably with a Vodafone Data SIM now and placed at the window frame.
 
 ### Analysis
 

@@ -1,5 +1,7 @@
 # dirty-laundry-iot-gateway
 
+> "I’ve decided to pause the project indefinitely. My schedule is currently full with family and other commitments, so I’ll only be working on it occasionally as time permits."
+
 ## Disclaimer
 This project is a private hobby project and is not affiliated with, endorsed, or supported by Miele & Cie. KG. No proprietary protocols are reverse-engineered intentionally.
 All observations are based on user-visible network behaviour.
@@ -79,11 +81,11 @@ which makes the EcoFeedback feature my main focus.
 ## Problem Summary
 
 - Cellar location blocks Wi-Fi due to **concrete, metal, and geometry**. 
-- Other Wi-Fi home networks might interference severly along the way.
+- Other Wi-Fi home networks might severly add interference along the way.
 - Power outlet availability is very **limited** and occupied by the appliances. 
 - Running a always-on solution is likely to expensive and contradicts eco-friendly appliance principle.
 - Internet access must be provided via **cellular (5G, 4G, 3G, 2G)** or other means.
-- Severe connectivity interruptions appear to **break smart features per cycle** since appliances seem to fallback to standalone mode and stop reporting to Miele cloud during this particular cycle. 
+- ~~Severe connectivity interruptions appear to **break smart features per cycle** since appliances seem to fallback to standalone mode and stop reporting to Miele cloud during this particular cycle.~~ Correction: Early observations and the setup (mainly thethered) strongly suggested this hypotheses, but after using a single device (tablet) for hotspot and cellular bridge, for a now longer period already, I can confirm, that the appliances perform reconnection attempts and buffer data during current cycle. 
 - Certain level of connectivity interruptions can be tolerated but unclear to which extend. 
 - Data volume, protocol behaviour, and buffering tolerance are undocumented. The system does not appear to be hardened for harsh environments or intermittent communication.
 - The Miele cloud service architecture and several design decisions are proprietary, leaving key aspects inherently undisclosed.
